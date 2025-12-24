@@ -21,7 +21,7 @@ export default function Login() {
       localStorage.setItem('adminUser', JSON.stringify(res.data.admin));
       
       alert("Login Successful! Welcome to 1Fi LMS.");
-      navigate('/'); // Redirect to Dashboard
+      navigate('/dashboard'); // Redirect to Dashboard
     } catch (err) {
       alert(err.response?.data?.message || "Invalid credentials. Please try again.");
     } finally {
