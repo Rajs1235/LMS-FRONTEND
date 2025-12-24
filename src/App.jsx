@@ -17,7 +17,7 @@ function App() {
       {/* 1. AUTH ROUTES: No Sidebar/Header here */}
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      
+       <Route path="/" element={<Signup />} /> 
       {/* 2. PUBLIC FORM: Usually full screen for customers */}
     
 
@@ -30,7 +30,7 @@ function App() {
         }
       >
         {/* All these children will render inside the <Outlet /> of AppLayout */}
-        <Route path="/" element={<Dashboard />} /> 
+       
          <Route path="/apply" element={<CreateApplication />} />
         <Route path="/ongoing" element={<OngoingLoans />} />
         <Route path="/collateral" element={<CollateralManagement />} />

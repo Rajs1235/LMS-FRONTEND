@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen, onClose }) => {
   const handleLogout = () => {
     localStorage.removeItem("adminToken");
     localStorage.removeItem("adminUser");
-    navigate("/login", { replace: true });
+    navigate("/", { replace: true });
   };
 
 
