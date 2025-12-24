@@ -14,9 +14,11 @@ const Sidebar = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-   localStorage.clear();
-  navigate('/signup'); // or '/'
+    localStorage.removeItem("adminToken");
+    localStorage.removeItem("adminUser");
+    navigate("/login", { replace: true });
   };
+
 
   const navItems = [
     { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
