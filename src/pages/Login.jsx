@@ -30,7 +30,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-indigo-950 px-4">
       <div className="max-w-md w-full bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
         <div className="text-center mb-8">
           <div className="bg-indigo-600 w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center text-white shadow-lg shadow-indigo-200">
