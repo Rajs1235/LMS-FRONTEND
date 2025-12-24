@@ -16,7 +16,7 @@ const Header = ({ onMenuClick }) => {
     
     // 2. Redirect to Login to test the "Protected Route" flow
     alert("Logging out...");
-    navigate('/login');
+    navigate('/signup');
   };
 
   return (
