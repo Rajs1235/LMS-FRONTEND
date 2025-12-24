@@ -13,20 +13,18 @@ import { cn } from '../../lib/utils';
 const Sidebar = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    localStorage.removeItem("adminToken");
-    localStorage.removeItem("adminUser");
-    navigate("/", { replace: true });
-  };
+const handleLogout = () => {
+  localStorage.removeItem("adminToken");
+  localStorage.removeItem("adminUser");
+  navigate("/", { replace: true });
+};
 
-
-  const navItems = [
-    { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
-    { to: '/apply', icon: FilePlus, label: 'New Application' },
-    { to: '/ongoing', icon: Activity, label: 'Ongoing Loans' },
-    { to: '/collateral', icon: ShieldCheck, label: 'Collateral' },
-  ];
-
+ const navItems = [
+  { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/apply', icon: FilePlus, label: 'New Application' },
+  { to: '/ongoing', icon: Activity, label: 'Ongoing Loans' },
+  { to: '/collateral', icon: ShieldCheck, label: 'Collateral' },
+];
   return (
     <>
       {isOpen && (
