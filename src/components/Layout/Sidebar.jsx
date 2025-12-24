@@ -14,9 +14,8 @@ const Sidebar = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    localStorage.removeItem('adminToken');
-    localStorage.removeItem('adminUser');
-    window.location.href = '/login'; 
+   localStorage.clear();
+  navigate('/signup'); // or '/'
   };
 
   const navItems = [
