@@ -141,7 +141,27 @@ Base URL:
 - `POST /loans/product`
 
 ---
+## 🧪 Automation Testing (Selenium)
 
+This project includes end-to-end automation testing using Selenium WebDriver with JavaScript.
+
+### 🔹 Covered Test Scenarios
+- User Signup (with alert handling)
+- User Login (authentication + alert handling)
+- Navigation to protected routes
+- Loan Application submission
+- Dynamic dropdown handling
+- Business validation (Loan eligibility based on LTV)
+
+### 🔹 Tech Stack
+- Selenium WebDriver
+- JavaScript (Node.js)
+
+### ▶️ Run Tests
+
+```bash
+npm run test:selenium
+```
 ## 📝 Notes for Reviewers
 
 - Email notifications are **fully implemented and tested**
